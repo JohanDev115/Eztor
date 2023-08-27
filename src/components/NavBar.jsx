@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className='hidden lg:flex flex-row justify-between items-center p-6 fixed w-full top-0 bg-white z-30 h-[96px] shadow-lg'>
+      <nav className='hidden lg:flex flex-row justify-between items-center p-6 sticky w-full top-0 bg-white z-30 h-[96px] shadow-lg'>
         <label className='flex flex-row items-center gap-10'>
           <Link to='/' className='font-poppins text-5xl font-semibold text-primary'>EZTOR</Link>
           <div className='flex flex-row w-full border border-primary rounded-full py-1 pr-2 pl-4 text-lg'>
@@ -57,7 +57,7 @@ function NavBar() {
           </button>
         </ul>
       </nav>
-      <nav className='flex lg:hidden flex-row justify-between items-center p-6 fixed w-full top-0 bg-white z-30 h-[80px] shadow-md'>
+      <nav className='flex lg:hidden flex-row justify-between items-center p-6 sticky w-full top-0 bg-white z-30 h-[80px] shadow-md'>
         <span className='w-10 h-10' onClick={openSideMenuNav}>
           <img className='w-full h-full object-contain' src={MenuIcon} alt="Open Menu" />
         </span>
