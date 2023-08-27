@@ -69,7 +69,7 @@ function NavBar() {
           </span>
         </button>
       </nav>
-      { IsSideMenuNavOpen && <SideMenuNav />}
+      { IsSideMenuNavOpen && <SideMenuNav closeSideBar={() => setIsSideNavMenuOpen(false)} />}
     </>
   )
 }
